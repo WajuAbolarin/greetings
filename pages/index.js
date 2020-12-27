@@ -37,7 +37,7 @@ export default function IndexPage() {
 
 
     return (
-        <div style={{height: '100vh', background, oveflow:'hidden'}}>
+        <div style={{height: '100vh', background, overflow:'hidden'}}>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link
                 href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Dancing+Script&family=Indie+Flower&family=Lobster&family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,400;1,300;1,400&display=swap"
