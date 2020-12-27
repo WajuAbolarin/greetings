@@ -107,11 +107,13 @@ export default function VideoPage() {
             video.height = window.innerHeight
             video.autoplay = true
             video.controls = true
+            video.style.opacity = 0
             playbackVideoRef.current = video
         }
         video.src = URL.createObjectURL(blob)
         stopStream()
         rootRef.current.appendChild(video)
+        video.style.opacity = 1
         setUiState('playback')
 
     }, [])
@@ -121,24 +123,20 @@ export default function VideoPage() {
             <div className="controls" style={{position: 'fixed', bottom: '20px', left: '45%', zIndex: 20}}>
                 <h2 style={{color: 'white'}}>{uiState}</h2>
                 {['inactive'].includes(uiState) && (
-                    <button style={styles.button} onPointerDown={startRecord}>
-                        Record
-                    </button>
+                    <svg width="200" onPointerDown={startRecord} style={{cursor: 'pointer'}}>
+                        <g pointerEvents="visiblePainted">
+                            <circle cx="50" cy="75" r="32" stroke="#FCA5A5" fill="#FCA5A5" strokeWidth="2"></circle>
+                            <circle cx="50" cy="75" r="30" fill="#EF4444"></circle>
+                        </g>
+                    </svg>
                 )}
                 {uiState === 'recording' &&
-                <button style={styles.button} onPointerDown={stopRecord}>Stop</button>
+                <svg width="200" onPointerDown={stopRecord} style={{cursor: 'pointer'}}>
+                    <rect x="50" y="30" width={100} height={90} fill="#EF4444" stroke="#FCA5A5"
+                          strokeWidth="5"></rect>
+                </svg>
                 }
             </div>
         </div>
     )
-}
-
-const styles = {
-    button: {
-        width: '120px',
-        height: '120px',
-        borderRadius: '50%',
-        color: 'white',
-        background: '#EF44444'
-    }
 }
