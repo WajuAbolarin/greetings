@@ -120,11 +120,11 @@ export default function VideoPage() {
         <div style={{height: '100vh', overflow: 'hidden'}} ref={rootRef}>
             <div className="controls" style={{position: 'fixed', bottom: '20px', left: '45%'}}>
                 <h2 style={{color: 'white'}}>{uiState}</h2>
-                <svg width={200}>
+                <svg width="200" style={{position:'fixed', bottom: '10px', right: '10px'}}>
                     {['inactive'].includes(uiState) && (
-                        <g onClick={() => startRecord()}>
-                            <circle cx="100" cy="75" r="55" stroke="#FCA5A5" fill="#FCA5A5" strokeWidth="5"></circle>
-                            <circle cx="100" cy="75" r="50" fill="#EF4444"></circle>
+                        <g onPointerDown={() => startRecord()} pointerEvents="visiblePainted" >
+                            <circle cx="50" cy="75" r="32" stroke="#FCA5A5" fill="#FCA5A5" strokeWidth="2"></circle>
+                            <circle cx="50" cy="75" r="30" fill="#EF4444"></circle>
                         </g>
                     )}
                     {uiState === 'recording' &&

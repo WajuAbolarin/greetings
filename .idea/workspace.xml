@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="332f2f0d-33bb-4365-aeb0-44f07dad298b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609025334914</updated>
       <workItem from="1609025336019" duration="10471000" />
-      <workItem from="1609057131060" duration="9401000" />
+      <workItem from="1609057131060" duration="10544000" />
     </task>
     <task id="LOCAL-00001" summary="POC text">
       <created>1609033498290</created>
@@ -74,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609033498290</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="quickfix tailwind">
+      <created>1609068691941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609068691941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="POC text" />
-    <option name="LAST_COMMIT_MESSAGE" value="POC text" />
+    <MESSAGE value="quickfix tailwind" />
+    <option name="LAST_COMMIT_MESSAGE" value="quickfix tailwind" />
   </component>
 </project>
