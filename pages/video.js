@@ -31,6 +31,7 @@ export default function VideoPage() {
         }, stream => {
             const video = videoRef.current
             video.width = window.innerWidth
+            video.muted = true
             video.height = window.innerHeight
             video.autoplay = true
             video.srcObject = stream

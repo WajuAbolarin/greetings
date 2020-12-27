@@ -12,7 +12,7 @@ const fonts = [
     {name: 'Dancing Script', value: "'Dancing Script', cursive"},
     {name: 'Indie Flower', value: "'Indie Flower', cursive"},
     {name: 'Lobster', value: "'Lobster', cursive"},
-    {name: 'Montesserat', value: "'Montserrat', sans-serif"},
+    {name: 'Montserrat', value: "'Montserrat', sans-serif"},
     {name: 'Playfair Display', value: "Playfair Display', serif"},
     {name: 'Roboto', value: "'Roboto', sans-serif"}
 ]
@@ -87,7 +87,7 @@ export default function IndexPage() {
                  onClick={() => {
                      selectRef.current.focus()
                  }}
-                 className={`text-2xl w-100 p-10 text-${textColor}`}
+                 className={`text-3xl md:text-7xl w-100 p-10 text-${textColor}`}
                  onInput={handleChange}
             />
         </div>
