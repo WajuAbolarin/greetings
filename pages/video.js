@@ -118,21 +118,27 @@ export default function VideoPage() {
 
     return (
         <div style={{height: '100vh', overflow: 'hidden'}} ref={rootRef}>
-            <div className="controls" style={{position: 'fixed', bottom: '20px', left: '45%'}}>
+            <div className="controls" style={{position: 'fixed', bottom: '20px', left: '45%', zIndex: 20}}>
                 <h2 style={{color: 'white'}}>{uiState}</h2>
-                <svg width="200" style={{position:'fixed', bottom: '10px', right: '10px'}}>
-                    {['inactive'].includes(uiState) && (
-                        <g onPointerDown={() => startRecord()} pointerEvents="visiblePainted" >
-                            <circle cx="50" cy="75" r="32" stroke="#FCA5A5" fill="#FCA5A5" strokeWidth="2"></circle>
-                            <circle cx="50" cy="75" r="30" fill="#EF4444"></circle>
-                        </g>
-                    )}
-                    {uiState === 'recording' &&
-                    <rect onClick={stopRecord} x="50" y="30" width={100} height={90} fill="#EF4444" stroke="#FCA5A5"
-                          strokeWidth="5"></rect>
-                    }
-                </svg>
+                {['inactive'].includes(uiState) && (
+                    <button style={styles.button} onPointerDown={startRecord}>
+                        Record
+                    </button>
+                )}
+                {uiState === 'recording' &&
+                <button style={styles.button} onPointerDown={stopRecord}>Stop</button>
+                }
             </div>
         </div>
     )
+}
+
+const styles = {
+    button: {
+        width: '120px',
+        height: '120px',
+        borderRadius: '50%',
+        color: 'white',
+        background: '#EF44444'
+    }
 }
