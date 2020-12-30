@@ -20,4 +20,20 @@ body {
 @tailwind utilities;
 /* Stop purging. */
 
+.message-editor:empty:before{
+    caret-color: transparent;
+    font-size: 4rem;
+    font-style: oblique;
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    content: attr(data-placeholder);
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+}
+.message-editor:empty:after {
+    display: inline-block;
+    width: 1px;
+    height: 40px;
+    background: white;
+}
 /* Your own custom utilities */

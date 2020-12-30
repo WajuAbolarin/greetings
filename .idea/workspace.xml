@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="332f2f0d-33bb-4365-aeb0-44f07dad298b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="/usr/local/lib/nodejs/node-v14.15.3-linux-x64/bin/node" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -62,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609025334914</updated>
       <workItem from="1609025336019" duration="10471000" />
-      <workItem from="1609057131060" duration="10544000" />
+      <workItem from="1609057131060" duration="11658000" />
+      <workItem from="1609176139421" duration="6790000" />
     </task>
     <task id="LOCAL-00001" summary="POC text">
       <created>1609033498290</created>
@@ -78,7 +81,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609068691941</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test cam">
+      <created>1609069810036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609069810036</updated>
+    </task>
+    <task id="LOCAL-00004" summary="WIP">
+      <created>1609070375483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609070375483</updated>
+    </task>
+    <task id="LOCAL-00005" summary="camera test">
+      <created>1609070561272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609070561272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +123,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="POC text" />
     <MESSAGE value="quickfix tailwind" />
-    <option name="LAST_COMMIT_MESSAGE" value="quickfix tailwind" />
+    <MESSAGE value="test cam" />
+    <MESSAGE value="WIP" />
+    <MESSAGE value="camera test" />
+    <option name="LAST_COMMIT_MESSAGE" value="camera test" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
